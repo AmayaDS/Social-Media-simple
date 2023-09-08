@@ -39,7 +39,7 @@ class Post:
         if user not in self.likes:
             self.likes.append(user)
 
-    #can't undestand this fully
+    #for easy read
     def __str__(self):
         return f"Post By {self.user.username}: {self.content}"
 
@@ -50,7 +50,7 @@ class Comment:
         self.user = user
         self.post = post
 
-    #dont understand the functionality very well
+    
     def __str__(self):
         return f"Comment By {self.user.username}: {self.text}"
 
